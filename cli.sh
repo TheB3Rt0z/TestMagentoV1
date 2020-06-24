@@ -40,7 +40,7 @@ if test $1 && test $1 == "sniff"; then
     $COMMAND $2 $EXTENSIONS --standard=PSR2 $PSR2_EXCLUDE;
     printf "\nDONE!\n";
 
-    MEQP1_EXCLUDE="--exclude=Generic.Files.LineLength,Generic.PHP.DisallowShortOpenTag,Generic.PHP.Syntax";
+    MEQP1_EXCLUDE="--exclude=Generic.Files.LineLength,Generic.PHP.DisallowShortOpenTag,Generic.PHP.Syntax,MEQP1.PHP.Syntax";
 
     printf "\nTesting XML files with MEQP1 standard:\n";
     $COMMAND $2 $EXTENSIONS --standard=MEQP1 $MEQP1_EXCLUDE;
